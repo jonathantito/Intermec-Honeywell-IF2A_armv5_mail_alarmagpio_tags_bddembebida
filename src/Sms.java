@@ -12,7 +12,7 @@ import javax.mail.internet.MimeMessage;
 public class Sms /*implements Runnable*/
 {
 		static private String to = "sistema.control.bienes.blanks@gmail.com";
-		static private String tituloCorreo = "TÌtulo del correo";
+		static private String tituloCorreo = "T√≠tulo del correo";
 		static private String contenidoCorreo = "<h1>This is a html content test email.</h1>";
 		
 		public Sms(String to_argc, String titCor_argc, String conCor_argc)
@@ -32,7 +32,7 @@ public class Sms /*implements Runnable*/
 			  Session session = Session.getDefaultInstance(props,  
 			   new javax.mail.Authenticator() {  
 			   protected PasswordAuthentication getPasswordAuthentication() {  
-			   return new PasswordAuthentication("sistema.control.bienes.blanks@gmail.com","blanksc5Fj76iZ");//change accordingly  
+			   return new PasswordAuthentication("sistema.control.bienes.blanks@gmail.com","amagados");//change accordingly  
 			   }  
 			  });  
 				  try 
@@ -45,7 +45,7 @@ public class Sms /*implements Runnable*/
 				   message.setSubject(tituloCorreo);
 				   message.setContent(contenidoCorreo, "text/html");
 				   Transport.send(message);  
-				   System.out.println("SE ENVÕA CORREO!!!");  
+				   System.out.println("SE ENV√çA CORREO!!!");  
 				  } 
 				  catch (MessagingException e) 
 				  {
